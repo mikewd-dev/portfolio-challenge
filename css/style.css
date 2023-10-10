@@ -26,6 +26,59 @@ p {
   margin: 0;
 }
 
+.first {
+  display: grid;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: -30px;
+}
+
+.second {
+  display: grid;
+  width: 42vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 344px;
+  margin-left: -47px;
+}
+
+.third {
+  display: grid;
+  width: 42vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 344px;
+  margin-left: -108px;
+}
+
+
+.first-one {
+  position: absolute;
+  font-size: 30px;
+  background-color: #76b9c1;
+  left: -30px;
+  margin-top: 240px;
+  height: fit-content;
+}
+
+.second-one {
+  position: absolute;
+  font-size: 30px;
+  background-color: #76b9c1;
+  left: -30px;
+  top: 370px;
+  height: fit-content;
+}
+
+.third-one {
+  position: absolute;
+  font-size: 30px;
+  background-color: #76b9c1;
+  top: 370px;
+  height: fit-content;
+}
+
 .hero-banner {
   display: flex;
   flex-direction: row;
@@ -46,7 +99,7 @@ p {
 }
 
 .page-wrapper {
-  width: 200px;
+  width: 130px;
   height: 100vh;
   display: grid;
   grid-template-columns: 25% 75%;
@@ -82,36 +135,36 @@ p {
   display: flex;
   flex-direction: row;
   position: absolute;
-  left: 225px;
+  left: 158px;
 }
 
-.page-section .my-work{
-/* display: flex; */
-flex-direction: row;
-position: absolute;
+.page-section .my-work {
+  /* display: flex; */
+  flex-direction: row;
+  position: absolute;
 
-height: 300px;
-left: 230px;
-top: 450px
+  height: 300px;
+  left: 230px;
+  top: 450px
 }
 
-.about-me p{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-margin-left:90px ;
-font-size: 35px;
-margin-left: 5px;
+.about-me p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 90px;
+  font-size: 35px;
+  margin-left: 5px;
 }
 
-.my-work{
-height: auto;
+.my-work {
+  height: auto;
   display: grid;
-grid-template-columns: 0;
-column-gap: 15px;
-grid-template-rows: auto;
+  grid-template-columns: 0;
+  column-gap: 15px;
+  grid-template-rows: auto;
   grid-template-areas: "first first first first"
-  "second second third third"
+    "second second third third"
 }
 
 
@@ -121,31 +174,33 @@ grid-template-rows: auto;
   list-style-type: none;
   border-bottom: 2px solid black;
 }
-.profile-pic{
-position: absolute;
-left: -140px;
-top: -50px;
-width: 200px;
-height: 150px;
+
+.profile-pic {
+  position: absolute;
+  left: -140px;
+  top: -50px;
+  width: 200px;
+  height: 150px;
 }
 
-#first{
+#first {
   grid-area: first;
-width: 75vw;
-height: 300px;
-  }
+  width: 75vw;
+  height: 300px;
+}
+
 #second {
   grid-area: second;
   width: 37vw;
   height: 100px;
-/* margin-right: 15px; */
-  }
+  /* margin-right: 15px; */
+}
 
-  #third {
-    grid-area: third;
-    width: 37vw;
-    height: 100px;
-    }
+#third {
+  grid-area: third;
+  width: 37vw;
+  height: 100px;
+}
 
 #about {
   grid-area: about;
@@ -183,5 +238,151 @@ height: 300px;
   margin-right: 20px;
   border-bottom: 3px solid;
   color: #76b9c1;
+
+}
+
+/* making it responsive */
+
+@media only screen and (max-width:1024px) {
+
+
+  .page-section .contact-me {
+    font-size: 20px;
+    left: 147px;
+  }
+
+  .page-section.my-work {
+    left: 126px;
+  }
+
+  .about-me p {
+    font-size: 10px;
+  }
+
+  .first {
+    width: 50vw;
+  }
+
+  #first {
+    width: 500px;
+  }
+
+  #second {
+    width: 230px;
+  }
+
+  .third {
+    width: 17vw;
+  }
+}
+
+/* @media only screen and (min-width:500) and(max-width:1000px){
+  h1{
+    font-size: 20px;
+  }
+    .about-me p{
+      font-size: 10px;
+      }
+
+    .second{
+      width: 114px;
+    }
+
+    .third{
+      width: 100px;
+    }
+
+    .page-section .contact-me{
+      font-size: 8px;
+      left: 120px;
+      }
+
+  .first-one{
+  font-size: 20px;
+  margin-left: -32px;
+  }
+
+  .second-one{
+  font-size: 20px;
+  margin-left: -32px;
+  }
+
+  .third-one{
+    font-size: 20px;
+    margin-left: 55px;
+    }
+
+  #first{
+  margin-left: -32px;
+  width: 288px;
+  }
+
+  #second{
+  margin-left: -32px;
+  width: 144px;
+  margin-top: -23px;
+  }
+
+  #third{
+    margin-left: 58px;
+    width: 139px;
+    margin-top: -23px;
+  }
+} */
+
+@media only screen and (max-width: 500px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .about-me p {
+    font-size: 10px;
+  }
+
+  .second {
+    width: 114px;
+  }
+
+  .third {
+    width: 100px;
+  }
+
+  .page-section .contact-me {
+    font-size: 8px;
+    left: 120px;
+  }
+
+  .first-one {
+    font-size: 20px;
+    margin-left: -32px;
+  }
+
+  .second-one {
+    font-size: 20px;
+    margin-left: -32px;
+  }
+
+  .third-one {
+    font-size: 20px;
+    margin-left: 55px;
+  }
+
+  #first {
+    margin-left: -32px;
+    width: 288px;
+  }
+
+  #second {
+    margin-left: -32px;
+    width: 144px;
+    margin-top: -23px;
+  }
+
+  #third {
+    margin-left: 58px;
+    width: 139px;
+    margin-top: -23px;
+  }
 
 }
